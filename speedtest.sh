@@ -24,6 +24,7 @@ declare -A SERVERS=(
     ["Nizhny Novgorod"]="st.nn.ertelecom.ru"
     ["Chelyabinsk"]="st.chel.ertelecom.ru"
     ["Tyumen"]="st.tmn.ertelecom.ru"
+    ["Samara"]="st.samara.ertelecom.ru"
 )
 
 declare -A FALLBACK_SERVERS=(
@@ -32,6 +33,7 @@ declare -A FALLBACK_SERVERS=(
     ["Nizhny Novgorod"]="speed-nn.vtt.net"
     ["Chelyabinsk"]="st.mgn.ertelecom.ru"
     ["Tyumen"]="st.krsk.ertelecom.ru"
+    ["Samara"]="st.saratov.ertelecom.ru"
 )
 
 declare -A FALLBACK_CITIES=(
@@ -40,10 +42,11 @@ declare -A FALLBACK_CITIES=(
     ["Nizhny Novgorod"]="Nizhny Novgorod"
     ["Chelyabinsk"]="Magnitogorsk"
     ["Tyumen"]="Krasnoyarsk"
+    ["Samara"]="saratov"
 )
 
 # Test order
-CITY_ORDER=("Moscow" "Saint Petersburg" "Nizhny Novgorod" "Chelyabinsk" "Tyumen")
+CITY_ORDER=("Moscow" "Saint Petersburg" "Nizhny Novgorod" "Chelyabinsk" "Tyumen" "Samara")
 
 # Functions
 find_available_port() {
